@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(composer create-project *)",
+      "Bash(cp \"D:/Skripsi/sekretariat-frontend/CLAUDE.md\" \"D:/Skripsi/CLAUDE_frontend_backup.md\")",
+      "Bash(rm \"D:/Skripsi/sekretariat-frontend/CLAUDE.md\")",
+      "PowerShell([System.IO.Directory]::GetFileSystemEntries\\(\"D:\\\\Skripsi\\\\sekretariat-frontend\"\\))",
+      "PowerShell([System.IO.Directory]::Move\\(\"D:\\\\Skripsi\\\\sekretariat-frontend\\\\.claude\", \"D:\\\\Skripsi\\\\.claude_backup\"\\))",
+      "Bash(npm install *)",
+      "Bash(php artisan *)",
+      "PowerShell([System.IO.Directory]::Move\\(\"D:\\\\Skripsi\\\\.claude_backup\", \"D:\\\\Skripsi\\\\sekretariat-frontend\\\\.claude\"\\))",
+      "PowerShell([System.IO.Directory]::Exists\\(\"D:\\\\Skripsi\\\\sekretariat-frontend\\\\.claude\"\\))",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8001/login)",
+      "Bash(curl -s http://localhost:8001/login)",
+      "Bash(npm run *)",
+      "Bash(curl *)",
+      "Bash(sc query *)",
+      "PowerShell(Get-Service *)",
+      "PowerShell(Get-Process *)",
+      "Read(//c/xampp//**)",
+      "Read(//d//**)",
+      "Read(//c//**)",
+      "Bash(/c/xampp/mysql_start.bat *)",
+      "Bash(/c/xampp/mysql/bin/mysqld.exe *)",
+      "Bash(\"/c/xampp/mysql/bin/mysql.exe\" -u root -e \"SELECT 1\")",
+      "Bash(/c/xampp/mysql/bin/mysql.exe *)"
+    ]
+  }
+}
