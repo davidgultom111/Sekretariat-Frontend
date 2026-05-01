@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HistoryJemaatController;
 use App\Http\Controllers\JemaatController;
 use App\Http\Controllers\SuratController;
 use App\Services\ApiService;
@@ -24,6 +25,12 @@ Route::middleware('auth.admin')->group(function () {
         Route::get('/{id}/edit', [JemaatController::class, 'edit'])->name('edit');
         Route::put('/{id}', [JemaatController::class, 'update'])->name('update');
         Route::delete('/{id}', [JemaatController::class, 'destroy'])->name('destroy');
+    });
+
+    Route::prefix('history')->name('history.')->group(function () {
+        Route::get('/', [HistoryJemaatController::class, 'index'])->name('index');
+        Route::post('/{id}/aktifkan', [HistoryJemaatController::class, 'activate'])->name('activate');
+        Route::delete('/{id}', [HistoryJemaatController::class, 'destroy'])->name('destroy');
     });
 
     Route::prefix('surat')->name('surat.')->group(function () {

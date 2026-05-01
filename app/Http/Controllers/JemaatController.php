@@ -11,7 +11,7 @@ class JemaatController extends Controller
     {
         $result = $api->getMembers([
             'search'   => $request->query('search'),
-            'status'   => $request->query('status'),
+            'status'   => 'Aktif',
             'per_page' => $request->query('per_page', 15),
             'page'     => $request->query('page', 1),
         ]);
@@ -21,7 +21,7 @@ class JemaatController extends Controller
         return view('jemaat.index', [
             'members' => $result['data']['data'] ?? [],
             'meta'    => $result['data']['meta'] ?? ['current_page' => 1, 'last_page' => 1, 'total' => 0],
-            'filters' => $request->only(['search', 'status', 'per_page']),
+            'filters' => $request->only(['search', 'per_page']),
         ]);
     }
 

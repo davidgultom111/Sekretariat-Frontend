@@ -28,8 +28,6 @@
                 <span class="ml-auto px-3 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-700">Aktif</span>
             @elseif($member['status_aktif'] === 'Tidak Aktif')
                 <span class="ml-auto px-3 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-700">Tidak Aktif</span>
-            @else
-                <span class="ml-auto px-3 py-1 text-xs font-semibold rounded-full bg-gray-100 text-gray-600">Dipindahkan</span>
             @endif
         </div>
 

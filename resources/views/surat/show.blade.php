@@ -148,7 +148,7 @@
                                  style="max-width:180mm;max-height:30mm;display:block;margin:0 auto;"
                                  onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
                             <div style="display:none;">
-                                <div style="font-size:12pt;font-weight:bold;">GEREJA PENTEKOSTA DI INDONESIA</div>
+                                <div style="font-size:12pt;font-weight:bold;">GEREJA PENTEKOSTA dI INDONESIA</div>
                                 <div style="font-size:14pt;font-weight:bold;">Jemaat "SAHABAT ALLAH" Palembang</div>
                                 <div style="font-size:10pt;">JL. Sejahtera Lr. Sahabat, Sukabangun II Kel. Sukajaya Kec. Sukarami, Palembang 30152</div>
                             </div>

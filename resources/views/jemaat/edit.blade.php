@@ -55,7 +55,7 @@
                 <select name="status_aktif"
                         class="w-full px-4 py-2.5 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500
                                {{ $errors->has('status_aktif') ? 'border-red-400' : 'border-gray-300' }}">
-                    @foreach(['Aktif', 'Tidak Aktif', 'Dipindahkan'] as $s)
+                    @foreach(['Aktif', 'Tidak Aktif'] as $s)
                         <option value="{{ $s }}"
                                 {{ (old('status_aktif', $member['status_aktif'])) === $s ? 'selected' : '' }}>
                             {{ $s }}
