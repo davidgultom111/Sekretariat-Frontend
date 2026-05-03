@@ -61,6 +61,43 @@
                 </svg>
                 Surat
             </a>
+
+            <a href="{{ route('jadwal.index') }}"
+               class="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors
+                      {{ request()->routeIs('jadwal.*') ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100' }}">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                </svg>
+                Jadwal Pelayanan
+            </a>
+
+            <a href="{{ route('galeri.index') }}"
+               class="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors
+                      {{ request()->routeIs('galeri.*') ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100' }}">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                </svg>
+                Galeri Foto
+            </a>
+
+            <a href="{{ route('pengumuman.index') }}"
+               class="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors
+                      {{ request()->routeIs('pengumuman.*') ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100' }}">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/>
+                </svg>
+                Pengumuman
+            </a>
+
+
+            <a href="{{ route('pengajuan.index') }}"
+               class="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors
+                      {{ request()->routeIs('pengajuan.*') ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100' }}">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                </svg>
+                Pengajuan Surat
+            </a>
         </nav>
 
         <div class="p-4 border-t border-gray-100">
