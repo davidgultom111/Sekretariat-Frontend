@@ -27,16 +27,17 @@
             <div class="flex-1 min-w-48">
                 <label class="block text-xs font-medium text-gray-500 mb-1.5">Cari</label>
                 <input type="text" name="search" value="{{ $filters['search'] ?? '' }}"
-                       placeholder="Cari nama jemaat atau nomor surat..."
+                       placeholder="Cari nama jemaat..."
                        class="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
             </div>
             <div class="w-52">
                 <label class="block text-xs font-medium text-gray-500 mb-1.5">Tipe Surat</label>
                 <select name="letter_type"
+                        onchange="this.form.submit()"
                         class="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                     <option value="">Semua Tipe</option>
                     @foreach($letterTypes as $key => $label)
-                        <option value="{{ $key }}" {{ ($filters['letter_type'] ?? '') === $key ? 'selected' : '' }}>
+                        <option value="{{ $key }}" @selected(($filters['letter_type'] ?? '') === $key)>
                             {{ $label }}
                         </option>
                     @endforeach
